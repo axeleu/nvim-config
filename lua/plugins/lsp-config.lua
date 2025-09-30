@@ -18,7 +18,10 @@ return {
             local lspconfig = require("lspconfig")
 
             -- Lua lsp
-            lspconfig.lua_ls.setup({ capabilities = capabilities })
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+                settings = { Lua = { diagnostics = { globals = { "vim" } } } },
+            })
 
             -- Python lsp
             lspconfig.pylsp.setup({

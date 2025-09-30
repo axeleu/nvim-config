@@ -1,4 +1,4 @@
-require("vim-options")
-require("vim-keymaps")
+require("options")
+require("keymaps")
 require("config.lazy")
 require("config.terminal")

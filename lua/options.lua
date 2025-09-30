@@ -6,7 +6,7 @@
 -- (no blinking, no changing shape in insert/replace modes)
 --vim.opt.guicursor = ""
 vim.opt.guicursor = "n-v-c-i:block"
-
+vim.opt.termguicolors = true
 -- Set number lines and relative numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
